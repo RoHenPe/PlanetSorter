@@ -90,13 +90,6 @@ public class MainMenuView extends View {
         invalidate();
     }
 
-    private void loadGraphics(int screenWidth, int screenHeight) {
-        titleBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.title);
-        titleBitmap = Utility.fitBitmap(titleBitmap, screenWidth, screenHeight / 2);
-
-        backgroundBitmap = createGradientBackground(screenWidth, screenHeight);
-    }
-
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
@@ -154,6 +147,20 @@ public class MainMenuView extends View {
         loadGraphics(w, h);
     }
 
+    private void loadGraphics(int screenWidth, int screenHeight) {
+        try {
+            // Attempt to load the old title bitmap if it exists and is valid
+            titleBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.title);
+            if (titleBitmap != null) {
+                titleBitmap = Utility.fitBitmap(titleBitmap, screenWidth, (int)(screenHeight * 0.45f));
+            }
+        } catch (Exception e) {
+            titleBitmap = null;
+        }
+
+        backgroundBitmap = createGradientBackground(screenWidth, screenHeight);
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -161,9 +168,28 @@ public class MainMenuView extends View {
         if (backgroundBitmap != null) {
             canvas.drawBitmap(backgroundBitmap, 0, 0, paint);
         }
+
+        // Draw the Logo / Title Area
         if (titleBitmap != null) {
             int x = (canvas.getWidth() - titleBitmap.getWidth()) / 2;
-            canvas.drawBitmap(titleBitmap, x, 0, paint);
+            canvas.drawBitmap(titleBitmap, x, 50, paint);
+        } else {
+            // High-quality coded logo for Planet Sorter
+            textPaint.setTextSize(140);
+            textPaint.setFakeBoldText(true);
+            textPaint.setShadowLayer(15, 8, 8, Color.BLACK);
+            
+            // "TRASH" in Blue
+            textPaint.setColor(Color.parseColor("#2196F3"));
+            canvas.drawText("TRASH", canvas.getWidth()/2f, 180, textPaint);
+            
+            // "RUSH" in Green
+            textPaint.setColor(Color.parseColor("#4CAF50"));
+            textPaint.setTextSize(130);
+            canvas.drawText("RUSH", canvas.getWidth()/2f, 320, textPaint);
+            
+            textPaint.clearShadowLayer();
+            textPaint.setFakeBoldText(false);
         }
 
         if (continueButton != null) {

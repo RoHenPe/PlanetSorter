@@ -6,7 +6,7 @@ A simple sorter game for Android.
 
 > Sort trash at speed! Operate the conveyor belt, throw waste into the right bins, and save the planet in this exciting eco-arcade game.
 > Accelerate, improve your reaction time, and become a sorting master! Will you be able to maintain a positive balance when batteries appear on the conveyor belt and there's a ton of trash?
-> Join the environmental movement through an engaging game! Sort trash, save the planet, and become the best in Trash Rush!
+> Join the environmental movement through an engaging game! Sort trash, save the planet, and become the best in Planet Sorter!
 
 <img width="3096" height="2126" alt="Screenshot_20260103_023313" src="https://github.com/user-attachments/assets/8f8bfb58-4a45-4651-8eba-86805de7a795" />
 

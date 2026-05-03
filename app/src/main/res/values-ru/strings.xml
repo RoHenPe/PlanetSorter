@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Trash Rush</string>
+    <string name="app_name">Planet Sorter</string>
     <string name="msgNSorted">Отсортировано: %d предметов</string>
     <string name="msgMissed">Пропущено! %d</string>
     <string name="msgLevel">Уровень %d!</string>
