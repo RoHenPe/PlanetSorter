@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Identity Palette (Eco-Modern) -->
+    <color name="eco_primary">#2D5A27</color>       <!-- Deep Forest Green -->
+    <color name="eco_secondary">#4CAF50</color>     <!-- Vibrant Leaf Green -->
+    <color name="eco_accent">#FFD54F</color>        <!-- Golden Sun -->
+    <color name="eco_background">#F1F8E9</color>    <!-- Soft Mint Mist -->
+
+    <!-- UI Surface Colors -->
+    <color name="glass_surface">#CCFFFFFF</color>   <!-- Translucent White -->
+    <color name="glass_border">#33FFFFFF</color>    <!-- Subtle Glass Edge -->
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1B3022</color>      <!-- Dark Moss -->
+    <color name="text_secondary">#4E6E5D</color>    <!-- Muted Sage -->
+
+    <!-- Functional Colors -->
+    <color name="stat_tree">#66BB6A</color>
+    <color name="stat_water">#42A5F5</color>
+    <color name="stat_co2">#78909C</color>
+
+    <!-- Launcher Icon Colors -->
+    <color name="ic_launcher_background">#388E3C</color>
+</resources>

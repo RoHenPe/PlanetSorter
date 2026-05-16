@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Stylized Planet (Core) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M54,54m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" />
+
+    <!-- Land Mass 1 -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M40,40c-2,3 2,10 5,12s8,-2 10,-5s-2,-10 -5,-12s-8,2 -10,5z" />
+
+    <!-- Land Mass 2 -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M65,60c-3,2 2,12 6,12s8,-5 8,-8s-5,-8 -8,-6s-3,0 -6,2z" />
+
+    <!-- Land Mass 3 -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M50,70c-2,1 1,5 4,5s5,-2 5,-4s-3,-4 -5,-3s-2,1 -4,2z" />
+
+    <!-- Sorting/Recycling Arrows (Triangle Formation) -->
+    <!-- Top Arrow Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,12l8,10l-16,0l8,-10z" />
+    <!-- Right Arrow Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M92,75l-10,-8l4,14l6,-6z" />
+    <!-- Left Arrow Head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,75l10,-8l-4,14l-6,-6z" />
+
+    <!-- Connecting Curved Lines -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,25c15,0 27,12 30,27" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M78,80c-10,8 -25,8 -40,0" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M24,52c3,-15 15,-27 30,-27" />
+
+</vector>
